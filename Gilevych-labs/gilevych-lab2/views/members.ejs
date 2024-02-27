@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<h1 class="title">My Team</h1>
+
+<%- include('head'); -%>
+
+<% members.forEach((member) => { %>
+    <div class="card">
+        <a href=<%= member.link %>>
+            <img src="/images/<%= member.id %>.jpg" alt="image" class="image">
+            <p><%= member.name %></p>
+        </a>
+    </div>
+<% }) %>
+
+
+<%- include('foot'); -%>

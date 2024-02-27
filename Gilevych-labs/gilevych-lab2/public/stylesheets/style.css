@@ -1,0 +1,74 @@
+html{
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font: 14px "Roboto", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c0c0c;
+  text-align: center;
+}
+
+.title{
+  color: #e8e8e8;
+}
+
+.container{
+  margin-top: 30px;
+  width: 1200px;
+  height: 60vh;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.card{
+  flex: 1;
+  text-align: center;
+}
+
+.card:first-child{
+  border-right: 1px solid #c5c5c5;
+}
+
+.image{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #b9b9b9;
+}
+
+a {
+  color: #bbbbbb;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#text{
+  margin: 200px 0 20px;
+  width: 100vw;
+  stroke-dasharray: 9175;
+  animation: 3s fillSvg linear;
+}
+
+@keyframes fillSvg {
+  0%{
+    stroke-dashoffset: 9175;
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
